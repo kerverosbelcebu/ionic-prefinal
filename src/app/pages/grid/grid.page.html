@@ -1,0 +1,22 @@
+<app-header titulo="Grid"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6"
+               *ngFor="let item of [1,1,1,1,1,1,1,11,1,1,1,1,1,1]">
+        <ion-card>
+          <ion-img src="/assets/icon/stan-lee.jpg"></ion-img>
+        </ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+          <ion-card-title>Awesome Title</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum facilis quo magnam maxime, a velit vel odit debitis officiis. Cum nihil natus reiciendis praesentium inventore asperiores quisquam amet fugit.
+        </ion-card-content>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+</ion-content>

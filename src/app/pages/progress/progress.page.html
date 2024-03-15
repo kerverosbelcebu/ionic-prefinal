@@ -1,0 +1,19 @@
+<app-header titulo="ProgressBar"></app-header>
+
+<ion-content [fullscreen]="true">
+ 
+    <ion-progress-bar type="determinate" [value]="porcentaje" color="primary"></ion-progress-bar>
+
+    <ion-list>
+        <ion-item>
+            <ion-label>Rangos del Nivel de LLuvia</ion-label>
+            <ion-range
+                min="0" max="100"
+                (ionChange)="rangeChange($event)">
+            <ion-icon slot="start" name="rainy" size="small"></ion-icon>
+            <ion-icon slot="end" name="rainy"></ion-icon>
+            </ion-range>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
